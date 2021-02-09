@@ -1,11 +1,11 @@
 const prod = {
-    port: 5003,
+    port: 5004,
     baseURL: "dnd.oneroomgaming.com",
     dndURL: 'https://dnd5eapi.co',
 }
 
 const staging = {
-    port: 5004,
+    port: 5003,
     baseURL: "staging.dnd.oneroomgaming.com",
     dndURL: 'https://dnd5eapi.co',
 }

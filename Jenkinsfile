@@ -57,8 +57,8 @@ pipeline {
             steps{
                sh  """
                     npm run build:staging --prefix frontend
-                    sudo rm -rf /srv/http/oneRoomDnd-staging/*
-                    sudo cp frontend/build/* -rf /srv/http/oneRoomDnd-staging/
+                    sudo rm -rf /srv/http/oneRoomDnd/staging/*
+                    sudo cp frontend/build/* -rf /srv/http/oneRoomDnd/staging/
                     sudo echo "frontend deployed..."
                 """
             }
@@ -69,13 +69,14 @@ pipeline {
             }
             steps{
                sh  """
-                    sudo npm run stop:staging --prefix /backend/oneRoomDnd-staging 
-                    sudo rm -rf /backend/oneRoomDnd-staging/*
-                    sudo cp backend/*.js backend/package.json backend/routes/*.js /backends/oneRoomDnd-staging/ -rf
-                    sudo cp /backends/env/oneRoomDnd/.env /backends/oneRoomDnd-staging/
-                    sudo npm --prefix /backends/oneRoomDnd-staging/ install
+                    sudo npm run stop:staging --prefix /backend/oneRoomDnd/staging
                     
-                    sudo npm deploy:staging --prefix /backend/oneRoomDnd-staging
+                    sudo rm -rf /backend/oneRoomDnd/staging/*
+                    sudo cp backend/*.js backend/package.json backend/routes/*.js /backends/oneRoomDnd/staging/ -rf
+                    sudo cp /backends/oneRoomDnd/env/.env /backends/oneRoomDnd/staging/
+                    sudo npm --prefix /backends/oneRoomDnd/staging/ install
+                    
+                    sudo npm deploy:staging --prefix /backend/oneRoomDnd/staging
                 """
             }
         }
@@ -87,8 +88,8 @@ pipeline {
                 sh  """
                     npm install --prefix frontend
                     npm run build --prefix frontend
-                    sudo rm -rf /srv/http/oneRoomDnd/*
-                    sudo cp frontend/build/* -rf /srv/http/oneRoomDnd/
+                    sudo rm -rf /srv/http/oneRoomDnd/production/*
+                    sudo cp frontend/build/* -rf /srv/http/oneRoomDnd/production/
                     sudo echo "frontend deployed..."
                 """
             }
@@ -103,7 +104,7 @@ pipeline {
 
                     sudo rm -rf /backend/oneRoomDnd/*
                     sudo cp backend/*.js backend/package.json /backends/oneRoomDnd/ -rf
-                    sudo cp /backends/env/oneRoomDnd/.env /backends/oneRoomDnd/
+                    sudo cp /backends/oneRoomDnd/env/.env /backends/oneRoomDnd/
                     sudo npm --prefix /backends/oneRoomDnd/ install
                     
                     cd /backends/oneRoomDnd

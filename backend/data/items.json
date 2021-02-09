@@ -1,0 +1,1619 @@
+{
+  "0": {
+    "index": "abacus",
+    "name": "Abacus",
+    "url": "/api/equipment/abacus",
+    "id": "0",
+    "categoryID": "0"
+  },
+  "1": {
+    "index": "acid-vial",
+    "name": "Acid (vial)",
+    "url": "/api/equipment/acid-vial",
+    "id": "1",
+    "categoryID": "0"
+  },
+  "2": {
+    "index": "alchemists-fire-flask",
+    "name": "Alchemist's fire (flask)",
+    "url": "/api/equipment/alchemists-fire-flask",
+    "id": "2",
+    "categoryID": "0"
+  },
+  "3": {
+    "index": "alchemists-supplies",
+    "name": "Alchemist's supplies",
+    "url": "/api/equipment/alchemists-supplies",
+    "id": "3",
+    "categoryID": "32"
+  },
+  "4": {
+    "index": "amulet",
+    "name": "Amulet",
+    "url": "/api/equipment/amulet",
+    "id": "4",
+    "categoryID": "0"
+  },
+  "5": {
+    "index": "animal-feed-1-day",
+    "name": "Animal Feed (1 day)",
+    "url": "/api/equipment/animal-feed-1-day",
+    "id": "5",
+    "categoryID": "18"
+  },
+  "6": {
+    "index": "antitoxin-vial",
+    "name": "Antitoxin (vial)",
+    "url": "/api/equipment/antitoxin-vial",
+    "id": "6",
+    "categoryID": "0"
+  },
+  "7": {
+    "index": "arrow",
+    "name": "Arrow",
+    "url": "/api/equipment/arrow",
+    "id": "7",
+    "categoryID": "0"
+  },
+  "8": {
+    "index": "backpack",
+    "name": "Backpack",
+    "url": "/api/equipment/backpack",
+    "id": "8",
+    "categoryID": "0"
+  },
+  "9": {
+    "index": "bagpipes",
+    "name": "Bagpipes",
+    "url": "/api/equipment/bagpipes",
+    "id": "9",
+    "categoryID": "32"
+  },
+  "10": {
+    "index": "ball-bearings-bag-of-1000",
+    "name": "Ball bearings (bag of 1,000)",
+    "url": "/api/equipment/ball-bearings-bag-of-1000",
+    "id": "10",
+    "categoryID": "0"
+  },
+  "11": {
+    "index": "barding-breastplate",
+    "name": "Barding: Breastplate",
+    "url": "/api/equipment/barding-breastplate",
+    "id": "11",
+    "categoryID": "18"
+  },
+  "12": {
+    "index": "barding-chain-mail",
+    "name": "Barding: Chain mail",
+    "url": "/api/equipment/barding-chain-mail",
+    "id": "12",
+    "categoryID": "18"
+  },
+  "13": {
+    "index": "barding-chain-shirt",
+    "name": "Barding: Chain shirt",
+    "url": "/api/equipment/barding-chain-shirt",
+    "id": "13",
+    "categoryID": "18"
+  },
+  "14": {
+    "index": "barding-half-plate",
+    "name": "Barding: Half plate",
+    "url": "/api/equipment/barding-half-plate",
+    "id": "14",
+    "categoryID": "18"
+  },
+  "15": {
+    "index": "barding-hide",
+    "name": "Barding: Hide",
+    "url": "/api/equipment/barding-hide",
+    "id": "15",
+    "categoryID": "18"
+  },
+  "16": {
+    "index": "barding-leather",
+    "name": "Barding: Leather",
+    "url": "/api/equipment/barding-leather",
+    "id": "16",
+    "categoryID": "18"
+  },
+  "17": {
+    "index": "barding-padded",
+    "name": "Barding: Padded",
+    "url": "/api/equipment/barding-padded",
+    "id": "17",
+    "categoryID": "18"
+  },
+  "18": {
+    "index": "barding-plate",
+    "name": "Barding: Plate",
+    "url": "/api/equipment/barding-plate",
+    "id": "18",
+    "categoryID": "18"
+  },
+  "19": {
+    "index": "barding-ring-mail",
+    "name": "Barding: Ring mail",
+    "url": "/api/equipment/barding-ring-mail",
+    "id": 19,
+    "categoryID": 18
+  },
+  "20": {
+    "index": "barding-scale-mail",
+    "name": "Barding: Scale mail",
+    "url": "/api/equipment/barding-scale-mail",
+    "id": "20",
+    "categoryID": "18"
+  },
+  "21": {
+    "index": "barding-splint",
+    "name": "Barding: Splint",
+    "url": "/api/equipment/barding-splint",
+    "id": "21",
+    "categoryID": "18"
+  },
+  "22": {
+    "index": "barding-studded-leather",
+    "name": "Barding: Studded Leather",
+    "url": "/api/equipment/barding-studded-leather",
+    "id": "22",
+    "categoryID": "18"
+  },
+  "23": {
+    "index": "barrel",
+    "name": "Barrel",
+    "url": "/api/equipment/barrel",
+    "id": "23",
+    "categoryID": "0"
+  },
+  "24": {
+    "index": "basket",
+    "name": "Basket",
+    "url": "/api/equipment/basket",
+    "id": "24",
+    "categoryID": "0"
+  },
+  "25": {
+    "index": "battleaxe",
+    "name": "Battleaxe",
+    "url": "/api/equipment/battleaxe",
+    "id": "25",
+    "categoryID": "35"
+  },
+  "26": {
+    "index": "bedroll",
+    "name": "Bedroll",
+    "url": "/api/equipment/bedroll",
+    "id": "26",
+    "categoryID": "0"
+  },
+  "27": {
+    "index": "bell",
+    "name": "Bell",
+    "url": "/api/equipment/bell",
+    "id": "27",
+    "categoryID": "0"
+  },
+  "28": {
+    "index": "bit-and-bridle",
+    "name": "Bit and bridle",
+    "url": "/api/equipment/bit-and-bridle",
+    "id": "28",
+    "categoryID": "18"
+  },
+  "29": {
+    "index": "blanket",
+    "name": "Blanket",
+    "url": "/api/equipment/blanket",
+    "id": "29",
+    "categoryID": "0"
+  },
+  "30": {
+    "index": "block-and-tackle",
+    "name": "Block and tackle",
+    "url": "/api/equipment/block-and-tackle",
+    "id": "30",
+    "categoryID": "0"
+  },
+  "31": {
+    "index": "blowgun",
+    "name": "Blowgun",
+    "url": "/api/equipment/blowgun",
+    "id": "31",
+    "categoryID": "35"
+  },
+  "32": {
+    "index": "blowgun-needle",
+    "name": "Blowgun needle",
+    "url": "/api/equipment/blowgun-needle",
+    "id": "32",
+    "categoryID": "0"
+  },
+  "33": {
+    "index": "book",
+    "name": "Book",
+    "url": "/api/equipment/book",
+    "id": "33",
+    "categoryID": "0"
+  },
+  "34": {
+    "index": "bottle-glass",
+    "name": "Bottle, glass",
+    "url": "/api/equipment/bottle-glass",
+    "id": "34",
+    "categoryID": "0"
+  },
+  "35": {
+    "index": "breastplate",
+    "name": "Breastplate",
+    "url": "/api/equipment/breastplate",
+    "id": "35",
+    "categoryID": "3"
+  },
+  "36": {
+    "index": "brewers-supplies",
+    "name": "Brewer's supplies",
+    "url": "/api/equipment/brewers-supplies",
+    "id": "36",
+    "categoryID": "32"
+  },
+  "37": {
+    "index": "bucket",
+    "name": "Bucket",
+    "url": "/api/equipment/bucket",
+    "id": "37",
+    "categoryID": "0"
+  },
+  "38": {
+    "index": "burglars-pack",
+    "name": "Burglar's Pack",
+    "url": "/api/equipment/burglars-pack",
+    "id": "38",
+    "categoryID": "0"
+  },
+  "39": {
+    "index": "calligraphers-supplies",
+    "name": "Calligrapher's supplies",
+    "url": "/api/equipment/calligraphers-supplies",
+    "id": "39",
+    "categoryID": "32"
+  },
+  "40": {
+    "index": "caltrops",
+    "name": "Caltrops",
+    "url": "/api/equipment/caltrops",
+    "id": "40",
+    "categoryID": "0"
+  },
+  "41": {
+    "index": "camel",
+    "name": "Camel",
+    "url": "/api/equipment/camel",
+    "id": "41",
+    "categoryID": "18"
+  },
+  "42": {
+    "index": "candle",
+    "name": "Candle",
+    "url": "/api/equipment/candle",
+    "id": "42",
+    "categoryID": "0"
+  },
+  "43": {
+    "index": "carpenters-tools",
+    "name": "Carpenter's tools",
+    "url": "/api/equipment/carpenters-tools",
+    "id": "43",
+    "categoryID": "32"
+  },
+  "44": {
+    "index": "carriage",
+    "name": "Carriage",
+    "url": "/api/equipment/carriage",
+    "id": "44",
+    "categoryID": "18"
+  },
+  "45": {
+    "index": "cart",
+    "name": "Cart",
+    "url": "/api/equipment/cart",
+    "id": "45",
+    "categoryID": "18"
+  },
+  "46": {
+    "index": "cartographers-tools",
+    "name": "Cartographer's tools",
+    "url": "/api/equipment/cartographers-tools",
+    "id": "46",
+    "categoryID": "32"
+  },
+  "47": {
+    "index": "case-crossbow-bolt",
+    "name": "Case, crossbow bolt",
+    "url": "/api/equipment/case-crossbow-bolt",
+    "id": "47",
+    "categoryID": "0"
+  },
+  "48": {
+    "index": "case-map-or-scroll",
+    "name": "Case, map or scroll",
+    "url": "/api/equipment/case-map-or-scroll",
+    "id": "48",
+    "categoryID": "0"
+  },
+  "49": {
+    "index": "chain-10-feet",
+    "name": "Chain (10 feet)",
+    "url": "/api/equipment/chain-10-feet",
+    "id": "49",
+    "categoryID": "0"
+  },
+  "50": {
+    "index": "chain-mail",
+    "name": "Chain Mail",
+    "url": "/api/equipment/chain-mail",
+    "id": "50",
+    "categoryID": "3"
+  },
+  "51": {
+    "index": "chain-shirt",
+    "name": "Chain Shirt",
+    "url": "/api/equipment/chain-shirt",
+    "id": "51",
+    "categoryID": "3"
+  },
+  "52": {
+    "index": "chalk-1-piece",
+    "name": "Chalk (1 piece)",
+    "url": "/api/equipment/chalk-1-piece",
+    "id": "52",
+    "categoryID": "0"
+  },
+  "53": {
+    "index": "chariot",
+    "name": "Chariot",
+    "url": "/api/equipment/chariot",
+    "id": "53",
+    "categoryID": "18"
+  },
+  "54": {
+    "index": "chest",
+    "name": "Chest",
+    "url": "/api/equipment/chest",
+    "id": "54",
+    "categoryID": "0"
+  },
+  "55": {
+    "index": "climbers-kit",
+    "name": "Climber's Kit",
+    "url": "/api/equipment/climbers-kit",
+    "id": "55",
+    "categoryID": "0"
+  },
+  "56": {
+    "index": "clothes-common",
+    "name": "Clothes, common",
+    "url": "/api/equipment/clothes-common",
+    "id": "56",
+    "categoryID": "0"
+  },
+  "57": {
+    "index": "clothes-costume",
+    "name": "Clothes, costume",
+    "url": "/api/equipment/clothes-costume",
+    "id": "57",
+    "categoryID": "0"
+  },
+  "58": {
+    "index": "clothes-fine",
+    "name": "Clothes, fine",
+    "url": "/api/equipment/clothes-fine",
+    "id": "58",
+    "categoryID": "0"
+  },
+  "59": {
+    "index": "clothes-travelers",
+    "name": "Clothes, traveler's",
+    "url": "/api/equipment/clothes-travelers",
+    "id": "59",
+    "categoryID": "0"
+  },
+  "60": {
+    "index": "club",
+    "name": "Club",
+    "url": "/api/equipment/club",
+    "id": "60",
+    "categoryID": "35"
+  },
+  "61": {
+    "index": "cobblers-tools",
+    "name": "Cobbler's tools",
+    "url": "/api/equipment/cobblers-tools",
+    "id": "61",
+    "categoryID": "32"
+  },
+  "62": {
+    "index": "component-pouch",
+    "name": "Component pouch",
+    "url": "/api/equipment/component-pouch",
+    "id": "62",
+    "categoryID": "0"
+  },
+  "63": {
+    "index": "cooks-utensils",
+    "name": "Cook's utensils",
+    "url": "/api/equipment/cooks-utensils",
+    "id": "63",
+    "categoryID": "32"
+  },
+  "64": {
+    "index": "crossbow-bolt",
+    "name": "Crossbow bolt",
+    "url": "/api/equipment/crossbow-bolt",
+    "id": "64",
+    "categoryID": "0"
+  },
+  "65": {
+    "index": "crossbow-hand",
+    "name": "Crossbow, hand",
+    "url": "/api/equipment/crossbow-hand",
+    "id": "65",
+    "categoryID": "35"
+  },
+  "66": {
+    "index": "crossbow-heavy",
+    "name": "Crossbow, heavy",
+    "url": "/api/equipment/crossbow-heavy",
+    "id": "66",
+    "categoryID": "35"
+  },
+  "67": {
+    "index": "crossbow-light",
+    "name": "Crossbow, light",
+    "url": "/api/equipment/crossbow-light",
+    "id": "67",
+    "categoryID": "35"
+  },
+  "68": {
+    "index": "crowbar",
+    "name": "Crowbar",
+    "url": "/api/equipment/crowbar",
+    "id": "68",
+    "categoryID": "0"
+  },
+  "69": {
+    "index": "crystal",
+    "name": "Crystal",
+    "url": "/api/equipment/crystal",
+    "id": "69",
+    "categoryID": "0"
+  },
+  "70": {
+    "index": "dagger",
+    "name": "Dagger",
+    "url": "/api/equipment/dagger",
+    "id": "70",
+    "categoryID": "35"
+  },
+  "71": {
+    "index": "dart",
+    "name": "Dart",
+    "url": "/api/equipment/dart",
+    "id": "71",
+    "categoryID": "35"
+  },
+  "72": {
+    "index": "dice-set",
+    "name": "Dice set",
+    "url": "/api/equipment/dice-set",
+    "id": "72",
+    "categoryID": "32"
+  },
+  "73": {
+    "index": "diplomats-pack",
+    "name": "Diplomat's Pack",
+    "url": "/api/equipment/diplomats-pack",
+    "id": "73",
+    "categoryID": "0"
+  },
+  "74": {
+    "index": "disguise-kit",
+    "name": "Disguise Kit",
+    "url": "/api/equipment/disguise-kit",
+    "id": "74",
+    "categoryID": "0"
+  },
+  "75": {
+    "index": "donkey",
+    "name": "Donkey",
+    "url": "/api/equipment/donkey",
+    "id": "75",
+    "categoryID": "18"
+  },
+  "76": {
+    "index": "drum",
+    "name": "Drum",
+    "url": "/api/equipment/drum",
+    "id": "76",
+    "categoryID": "32"
+  },
+  "77": {
+    "index": "dulcimer",
+    "name": "Dulcimer",
+    "url": "/api/equipment/dulcimer",
+    "id": "77",
+    "categoryID": "32"
+  },
+  "78": {
+    "index": "dungeoneers-pack",
+    "name": "Dungeoneer's Pack",
+    "url": "/api/equipment/dungeoneers-pack",
+    "id": "78",
+    "categoryID": "0"
+  },
+  "79": {
+    "index": "elephant",
+    "name": "Elephant",
+    "url": "/api/equipment/elephant",
+    "id": "79",
+    "categoryID": "18"
+  },
+  "80": {
+    "index": "emblem",
+    "name": "Emblem",
+    "url": "/api/equipment/emblem",
+    "id": "80",
+    "categoryID": "0"
+  },
+  "81": {
+    "index": "entertainers-pack",
+    "name": "Entertainer's Pack",
+    "url": "/api/equipment/entertainers-pack",
+    "id": "81",
+    "categoryID": "0"
+  },
+  "82": {
+    "index": "explorers-pack",
+    "name": "Explorer's Pack",
+    "url": "/api/equipment/explorers-pack",
+    "id": "82",
+    "categoryID": "0"
+  },
+  "83": {
+    "index": "fishing-tackle",
+    "name": "Fishing tackle",
+    "url": "/api/equipment/fishing-tackle",
+    "id": "83",
+    "categoryID": "0"
+  },
+  "84": {
+    "index": "flail",
+    "name": "Flail",
+    "url": "/api/equipment/flail",
+    "id": "84",
+    "categoryID": "35"
+  },
+  "85": {
+    "index": "flask-or-tankard",
+    "name": "Flask or tankard",
+    "url": "/api/equipment/flask-or-tankard",
+    "id": "85",
+    "categoryID": "0"
+  },
+  "86": {
+    "index": "flute",
+    "name": "Flute",
+    "url": "/api/equipment/flute",
+    "id": "86",
+    "categoryID": "32"
+  },
+  "87": {
+    "index": "forgery-kit",
+    "name": "Forgery Kit",
+    "url": "/api/equipment/forgery-kit",
+    "id": "87",
+    "categoryID": "0"
+  },
+  "88": {
+    "index": "galley",
+    "name": "Galley",
+    "url": "/api/equipment/galley",
+    "id": "88",
+    "categoryID": "18"
+  },
+  "89": {
+    "index": "glaive",
+    "name": "Glaive",
+    "url": "/api/equipment/glaive",
+    "id": "89",
+    "categoryID": "35"
+  },
+  "90": {
+    "index": "glassblowers-tools",
+    "name": "Glassblower's tools",
+    "url": "/api/equipment/glassblowers-tools",
+    "id": "90",
+    "categoryID": "32"
+  },
+  "91": {
+    "index": "grappling-hook",
+    "name": "Grappling hook",
+    "url": "/api/equipment/grappling-hook",
+    "id": "91",
+    "categoryID": "0"
+  },
+  "92": {
+    "index": "greataxe",
+    "name": "Greataxe",
+    "url": "/api/equipment/greataxe",
+    "id": "92",
+    "categoryID": "35"
+  },
+  "93": {
+    "index": "greatclub",
+    "name": "Greatclub",
+    "url": "/api/equipment/greatclub",
+    "id": "93",
+    "categoryID": "35"
+  },
+  "94": {
+    "index": "greatsword",
+    "name": "Greatsword",
+    "url": "/api/equipment/greatsword",
+    "id": "94",
+    "categoryID": "35"
+  },
+  "95": {
+    "index": "halberd",
+    "name": "Halberd",
+    "url": "/api/equipment/halberd",
+    "id": "95",
+    "categoryID": "35"
+  },
+  "96": {
+    "index": "half-plate",
+    "name": "Half Plate",
+    "url": "/api/equipment/half-plate",
+    "id": "96",
+    "categoryID": "3"
+  },
+  "97": {
+    "index": "hammer",
+    "name": "Hammer",
+    "url": "/api/equipment/hammer",
+    "id": "97",
+    "categoryID": "0"
+  },
+  "98": {
+    "index": "hammer-sledge",
+    "name": "Hammer, sledge",
+    "url": "/api/equipment/hammer-sledge",
+    "id": "98",
+    "categoryID": "0"
+  },
+  "99": {
+    "index": "handaxe",
+    "name": "Handaxe",
+    "url": "/api/equipment/handaxe",
+    "id": "99",
+    "categoryID": "35"
+  },
+  "100": {
+    "index": "healers-kit",
+    "name": "Healer's Kit",
+    "url": "/api/equipment/healers-kit",
+    "id": "100",
+    "categoryID": "0"
+  },
+  "101": {
+    "index": "herbalism-kit",
+    "name": "Herbalism Kit",
+    "url": "/api/equipment/herbalism-kit",
+    "id": "101",
+    "categoryID": "0"
+  },
+  "102": {
+    "index": "hide",
+    "name": "Hide",
+    "url": "/api/equipment/hide",
+    "id": "102",
+    "categoryID": "3"
+  },
+  "103": {
+    "index": "holy-water-flask",
+    "name": "Holy water (flask)",
+    "url": "/api/equipment/holy-water-flask",
+    "id": "103",
+    "categoryID": "0"
+  },
+  "104": {
+    "index": "horn",
+    "name": "Horn",
+    "url": "/api/equipment/horn",
+    "id": "104",
+    "categoryID": "32"
+  },
+  "105": {
+    "index": "horse-draft",
+    "name": "Horse, draft",
+    "url": "/api/equipment/horse-draft",
+    "id": "105",
+    "categoryID": "18"
+  },
+  "106": {
+    "index": "horse-riding",
+    "name": "Horse, riding",
+    "url": "/api/equipment/horse-riding",
+    "id": "106",
+    "categoryID": "18"
+  },
+  "107": {
+    "index": "hourglass",
+    "name": "Hourglass",
+    "url": "/api/equipment/hourglass",
+    "id": "107",
+    "categoryID": "0"
+  },
+  "108": {
+    "index": "hunting-trap",
+    "name": "Hunting trap",
+    "url": "/api/equipment/hunting-trap",
+    "id": "108",
+    "categoryID": "0"
+  },
+  "109": {
+    "index": "ink-1-ounce-bottle",
+    "name": "Ink (1 ounce bottle)",
+    "url": "/api/equipment/ink-1-ounce-bottle",
+    "id": "109",
+    "categoryID": "0"
+  },
+  "110": {
+    "index": "ink-pen",
+    "name": "Ink pen",
+    "url": "/api/equipment/ink-pen",
+    "id": "110",
+    "categoryID": "0"
+  },
+  "111": {
+    "index": "javelin",
+    "name": "Javelin",
+    "url": "/api/equipment/javelin",
+    "id": "111",
+    "categoryID": "35"
+  },
+  "112": {
+    "index": "jewelers-tools",
+    "name": "Jeweler's tools",
+    "url": "/api/equipment/jewelers-tools",
+    "id": "112",
+    "categoryID": "32"
+  },
+  "113": {
+    "index": "jug-or-pitcher",
+    "name": "Jug or pitcher",
+    "url": "/api/equipment/jug-or-pitcher",
+    "id": "113",
+    "categoryID": "0"
+  },
+  "114": {
+    "index": "keelboat",
+    "name": "Keelboat",
+    "url": "/api/equipment/keelboat",
+    "id": "114",
+    "categoryID": "18"
+  },
+  "115": {
+    "index": "ladder-10-foot",
+    "name": "Ladder (10-foot)",
+    "url": "/api/equipment/ladder-10-foot",
+    "id": "115",
+    "categoryID": "0"
+  },
+  "116": {
+    "index": "lamp",
+    "name": "Lamp",
+    "url": "/api/equipment/lamp",
+    "id": "116",
+    "categoryID": "0"
+  },
+  "117": {
+    "index": "lance",
+    "name": "Lance",
+    "url": "/api/equipment/lance",
+    "id": "117",
+    "categoryID": "35"
+  },
+  "118": {
+    "index": "lantern-bullseye",
+    "name": "Lantern, bullseye",
+    "url": "/api/equipment/lantern-bullseye",
+    "id": "118",
+    "categoryID": "0"
+  },
+  "119": {
+    "index": "lantern-hooded",
+    "name": "Lantern, hooded",
+    "url": "/api/equipment/lantern-hooded",
+    "id": "119",
+    "categoryID": "0"
+  },
+  "120": {
+    "index": "leather",
+    "name": "Leather",
+    "url": "/api/equipment/leather",
+    "id": "120",
+    "categoryID": "3"
+  },
+  "121": {
+    "index": "leatherworkers-tools",
+    "name": "Leatherworker's tools",
+    "url": "/api/equipment/leatherworkers-tools",
+    "id": "121",
+    "categoryID": "32"
+  },
+  "122": {
+    "index": "light-hammer",
+    "name": "Light hammer",
+    "url": "/api/equipment/light-hammer",
+    "id": "122",
+    "categoryID": "35"
+  },
+  "123": {
+    "index": "lock",
+    "name": "Lock",
+    "url": "/api/equipment/lock",
+    "id": "123",
+    "categoryID": "0"
+  },
+  "124": {
+    "index": "longbow",
+    "name": "Longbow",
+    "url": "/api/equipment/longbow",
+    "id": "124",
+    "categoryID": "35"
+  },
+  "125": {
+    "index": "longship",
+    "name": "Longship",
+    "url": "/api/equipment/longship",
+    "id": "125",
+    "categoryID": "18"
+  },
+  "126": {
+    "index": "longsword",
+    "name": "Longsword",
+    "url": "/api/equipment/longsword",
+    "id": "126",
+    "categoryID": "35"
+  },
+  "127": {
+    "index": "lute",
+    "name": "Lute",
+    "url": "/api/equipment/lute",
+    "id": "127",
+    "categoryID": "32"
+  },
+  "128": {
+    "index": "lyre",
+    "name": "Lyre",
+    "url": "/api/equipment/lyre",
+    "id": "128",
+    "categoryID": "32"
+  },
+  "129": {
+    "index": "mace",
+    "name": "Mace",
+    "url": "/api/equipment/mace",
+    "id": "129",
+    "categoryID": "35"
+  },
+  "130": {
+    "index": "magnifying-glass",
+    "name": "Magnifying glass",
+    "url": "/api/equipment/magnifying-glass",
+    "id": "130",
+    "categoryID": "0"
+  },
+  "131": {
+    "index": "manacles",
+    "name": "Manacles",
+    "url": "/api/equipment/manacles",
+    "id": "131",
+    "categoryID": "0"
+  },
+  "132": {
+    "index": "masons-tools",
+    "name": "Mason's tools",
+    "url": "/api/equipment/masons-tools",
+    "id": "132",
+    "categoryID": "32"
+  },
+  "133": {
+    "index": "mastiff",
+    "name": "Mastiff",
+    "url": "/api/equipment/mastiff",
+    "id": "133",
+    "categoryID": "18"
+  },
+  "134": {
+    "index": "maul",
+    "name": "Maul",
+    "url": "/api/equipment/maul",
+    "id": "134",
+    "categoryID": "35"
+  },
+  "135": {
+    "index": "mess-kit",
+    "name": "Mess Kit",
+    "url": "/api/equipment/mess-kit",
+    "id": "135",
+    "categoryID": "0"
+  },
+  "136": {
+    "index": "mirror-steel",
+    "name": "Mirror, steel",
+    "url": "/api/equipment/mirror-steel",
+    "id": "136",
+    "categoryID": "0"
+  },
+  "137": {
+    "index": "morningstar",
+    "name": "Morningstar",
+    "url": "/api/equipment/morningstar",
+    "id": "137",
+    "categoryID": "35"
+  },
+  "138": {
+    "index": "mule",
+    "name": "Mule",
+    "url": "/api/equipment/mule",
+    "id": "138",
+    "categoryID": "18"
+  },
+  "139": {
+    "index": "navigators-tools",
+    "name": "Navigator's tools",
+    "url": "/api/equipment/navigators-tools",
+    "id": "139",
+    "categoryID": "32"
+  },
+  "140": {
+    "index": "net",
+    "name": "Net",
+    "url": "/api/equipment/net",
+    "id": "140",
+    "categoryID": "35"
+  },
+  "141": {
+    "index": "oil-flask",
+    "name": "Oil (flask)",
+    "url": "/api/equipment/oil-flask",
+    "id": "141",
+    "categoryID": "0"
+  },
+  "142": {
+    "index": "orb",
+    "name": "Orb",
+    "url": "/api/equipment/orb",
+    "id": "142",
+    "categoryID": "0"
+  },
+  "143": {
+    "index": "padded",
+    "name": "Padded",
+    "url": "/api/equipment/padded",
+    "id": "143",
+    "categoryID": "3"
+  },
+  "144": {
+    "index": "painters-supplies",
+    "name": "Painter's supplies",
+    "url": "/api/equipment/painters-supplies",
+    "id": "144",
+    "categoryID": "32"
+  },
+  "145": {
+    "index": "pan-flute",
+    "name": "Pan flute",
+    "url": "/api/equipment/pan-flute",
+    "id": "145",
+    "categoryID": "32"
+  },
+  "146": {
+    "index": "paper-one-sheet",
+    "name": "Paper (one sheet)",
+    "url": "/api/equipment/paper-one-sheet",
+    "id": "146",
+    "categoryID": "0"
+  },
+  "147": {
+    "index": "parchment-one-sheet",
+    "name": "Parchment (one sheet)",
+    "url": "/api/equipment/parchment-one-sheet",
+    "id": "147",
+    "categoryID": "0"
+  },
+  "148": {
+    "index": "perfume-vial",
+    "name": "Perfume (vial)",
+    "url": "/api/equipment/perfume-vial",
+    "id": "148",
+    "categoryID": "0"
+  },
+  "149": {
+    "index": "pick-miners",
+    "name": "Pick, miner's",
+    "url": "/api/equipment/pick-miners",
+    "id": "149",
+    "categoryID": "0"
+  },
+  "150": {
+    "index": "pike",
+    "name": "Pike",
+    "url": "/api/equipment/pike",
+    "id": "150",
+    "categoryID": "35"
+  },
+  "151": {
+    "index": "piton",
+    "name": "Piton",
+    "url": "/api/equipment/piton",
+    "id": "151",
+    "categoryID": "0"
+  },
+  "152": {
+    "index": "plate",
+    "name": "Plate",
+    "url": "/api/equipment/plate",
+    "id": "152",
+    "categoryID": "3"
+  },
+  "153": {
+    "index": "playing-card-set",
+    "name": "Playing card set",
+    "url": "/api/equipment/playing-card-set",
+    "id": "153",
+    "categoryID": "32"
+  },
+  "154": {
+    "index": "poison-basic-vial",
+    "name": "Poison, basic (vial)",
+    "url": "/api/equipment/poison-basic-vial",
+    "id": "154",
+    "categoryID": "0"
+  },
+  "155": {
+    "index": "poisoners-kit",
+    "name": "Poisoner's Kit",
+    "url": "/api/equipment/poisoners-kit",
+    "id": "155",
+    "categoryID": "0"
+  },
+  "156": {
+    "index": "pole-10-foot",
+    "name": "Pole (10-foot)",
+    "url": "/api/equipment/pole-10-foot",
+    "id": "156",
+    "categoryID": "0"
+  },
+  "157": {
+    "index": "pony",
+    "name": "Pony",
+    "url": "/api/equipment/pony",
+    "id": "157",
+    "categoryID": "18"
+  },
+  "158": {
+    "index": "pot-iron",
+    "name": "Pot, iron",
+    "url": "/api/equipment/pot-iron",
+    "id": "158",
+    "categoryID": "0"
+  },
+  "159": {
+    "index": "potion-of-healing",
+    "name": "Potion of healing",
+    "url": "/api/equipment/potion-of-healing",
+    "id": "159",
+    "categoryID": "0"
+  },
+  "160": {
+    "index": "potters-tools",
+    "name": "Potter's tools",
+    "url": "/api/equipment/potters-tools",
+    "id": "160",
+    "categoryID": "32"
+  },
+  "161": {
+    "index": "pouch",
+    "name": "Pouch",
+    "url": "/api/equipment/pouch",
+    "id": "161",
+    "categoryID": "0"
+  },
+  "162": {
+    "index": "priests-pack",
+    "name": "Priest's Pack",
+    "url": "/api/equipment/priests-pack",
+    "id": "162",
+    "categoryID": "0"
+  },
+  "163": {
+    "index": "quarterstaff",
+    "name": "Quarterstaff",
+    "url": "/api/equipment/quarterstaff",
+    "id": "163",
+    "categoryID": "35"
+  },
+  "164": {
+    "index": "quiver",
+    "name": "Quiver",
+    "url": "/api/equipment/quiver",
+    "id": "164",
+    "categoryID": "0"
+  },
+  "165": {
+    "index": "ram-portable",
+    "name": "Ram, portable",
+    "url": "/api/equipment/ram-portable",
+    "id": "165",
+    "categoryID": "0"
+  },
+  "166": {
+    "index": "rapier",
+    "name": "Rapier",
+    "url": "/api/equipment/rapier",
+    "id": "166",
+    "categoryID": "35"
+  },
+  "167": {
+    "index": "rations-1-day",
+    "name": "Rations (1 day)",
+    "url": "/api/equipment/rations-1-day",
+    "id": "167",
+    "categoryID": "0"
+  },
+  "168": {
+    "index": "reliquary",
+    "name": "Reliquary",
+    "url": "/api/equipment/reliquary",
+    "id": "168",
+    "categoryID": "0"
+  },
+  "169": {
+    "index": "riding",
+    "name": "Riding",
+    "url": "/api/equipment/riding",
+    "id": "169",
+    "categoryID": "18"
+  },
+  "170": {
+    "index": "ring-mail",
+    "name": "Ring Mail",
+    "url": "/api/equipment/ring-mail",
+    "id": "170",
+    "categoryID": "3"
+  },
+  "171": {
+    "index": "robes",
+    "name": "Robes",
+    "url": "/api/equipment/robes",
+    "id": "171",
+    "categoryID": "0"
+  },
+  "172": {
+    "index": "rod",
+    "name": "Rod",
+    "url": "/api/equipment/rod",
+    "id": "172",
+    "categoryID": "0"
+  },
+  "173": {
+    "index": "rope-hempen-50-feet",
+    "name": "Rope, hempen (50 feet)",
+    "url": "/api/equipment/rope-hempen-50-feet",
+    "id": "173",
+    "categoryID": "0"
+  },
+  "174": {
+    "index": "rope-silk-50-feet",
+    "name": "Rope, silk (50 feet)",
+    "url": "/api/equipment/rope-silk-50-feet",
+    "id": "174",
+    "categoryID": "0"
+  },
+  "175": {
+    "index": "rowboat",
+    "name": "Rowboat",
+    "url": "/api/equipment/rowboat",
+    "id": "175",
+    "categoryID": "18"
+  },
+  "176": {
+    "index": "sack",
+    "name": "Sack",
+    "url": "/api/equipment/sack",
+    "id": "176",
+    "categoryID": "0"
+  },
+  "177": {
+    "index": "saddle-exotic",
+    "name": "Saddle, Exotic",
+    "url": "/api/equipment/saddle-exotic",
+    "id": "177",
+    "categoryID": "18"
+  },
+  "178": {
+    "index": "saddle-military",
+    "name": "Saddle, Military",
+    "url": "/api/equipment/saddle-military",
+    "id": "178",
+    "categoryID": "18"
+  },
+  "179": {
+    "index": "saddle-pack",
+    "name": "Saddle, Pack",
+    "url": "/api/equipment/saddle-pack",
+    "id": "179",
+    "categoryID": "18"
+  },
+  "180": {
+    "index": "saddlebags",
+    "name": "Saddlebags",
+    "url": "/api/equipment/saddlebags",
+    "id": "180",
+    "categoryID": "18"
+  },
+  "181": {
+    "index": "sailing-ship",
+    "name": "Sailing ship",
+    "url": "/api/equipment/sailing-ship",
+    "id": "181",
+    "categoryID": "18"
+  },
+  "182": {
+    "index": "scale-mail",
+    "name": "Scale Mail",
+    "url": "/api/equipment/scale-mail",
+    "id": "182",
+    "categoryID": "3"
+  },
+  "183": {
+    "index": "scale-merchants",
+    "name": "Scale, merchant's",
+    "url": "/api/equipment/scale-merchants",
+    "id": "183",
+    "categoryID": "0"
+  },
+  "184": {
+    "index": "scholars-pack",
+    "name": "Scholar's Pack",
+    "url": "/api/equipment/scholars-pack",
+    "id": "184",
+    "categoryID": "0"
+  },
+  "185": {
+    "index": "scimitar",
+    "name": "Scimitar",
+    "url": "/api/equipment/scimitar",
+    "id": "185",
+    "categoryID": "35"
+  },
+  "186": {
+    "index": "sealing-wax",
+    "name": "Sealing wax",
+    "url": "/api/equipment/sealing-wax",
+    "id": "186",
+    "categoryID": "0"
+  },
+  "187": {
+    "index": "shawm",
+    "name": "Shawm",
+    "url": "/api/equipment/shawm",
+    "id": "187",
+    "categoryID": "32"
+  },
+  "188": {
+    "index": "shield",
+    "name": "Shield",
+    "url": "/api/equipment/shield",
+    "id": "188",
+    "categoryID": "3"
+  },
+  "189": {
+    "index": "shortbow",
+    "name": "Shortbow",
+    "url": "/api/equipment/shortbow",
+    "id": "189",
+    "categoryID": "35"
+  },
+  "190": {
+    "index": "shortsword",
+    "name": "Shortsword",
+    "url": "/api/equipment/shortsword",
+    "id": "190",
+    "categoryID": "35"
+  },
+  "191": {
+    "index": "shovel",
+    "name": "Shovel",
+    "url": "/api/equipment/shovel",
+    "id": "191",
+    "categoryID": "0"
+  },
+  "192": {
+    "index": "sickle",
+    "name": "Sickle",
+    "url": "/api/equipment/sickle",
+    "id": "192",
+    "categoryID": "35"
+  },
+  "193": {
+    "index": "signal-whistle",
+    "name": "Signal whistle",
+    "url": "/api/equipment/signal-whistle",
+    "id": "193",
+    "categoryID": "0"
+  },
+  "194": {
+    "index": "signet-ring",
+    "name": "Signet ring",
+    "url": "/api/equipment/signet-ring",
+    "id": "194",
+    "categoryID": "0"
+  },
+  "195": {
+    "index": "sled",
+    "name": "Sled",
+    "url": "/api/equipment/sled",
+    "id": "195",
+    "categoryID": "18"
+  },
+  "196": {
+    "index": "sling",
+    "name": "Sling",
+    "url": "/api/equipment/sling",
+    "id": "196",
+    "categoryID": "35"
+  },
+  "197": {
+    "index": "sling-bullet",
+    "name": "Sling bullet",
+    "url": "/api/equipment/sling-bullet",
+    "id": "197",
+    "categoryID": "0"
+  },
+  "198": {
+    "index": "smiths-tools",
+    "name": "Smith's tools",
+    "url": "/api/equipment/smiths-tools",
+    "id": "198",
+    "categoryID": "32"
+  },
+  "199": {
+    "index": "soap",
+    "name": "Soap",
+    "url": "/api/equipment/soap",
+    "id": "199",
+    "categoryID": "0"
+  },
+  "200": {
+    "index": "spear",
+    "name": "Spear",
+    "url": "/api/equipment/spear",
+    "id": "200",
+    "categoryID": "35"
+  },
+  "201": {
+    "index": "spellbook",
+    "name": "Spellbook",
+    "url": "/api/equipment/spellbook",
+    "id": "201",
+    "categoryID": "0"
+  },
+  "202": {
+    "index": "spike-iron",
+    "name": "Spike, iron",
+    "url": "/api/equipment/spike-iron",
+    "id": "202",
+    "categoryID": "0"
+  },
+  "203": {
+    "index": "splint",
+    "name": "Splint",
+    "url": "/api/equipment/splint",
+    "id": "203",
+    "categoryID": "3"
+  },
+  "204": {
+    "index": "sprig-of-mistletoe",
+    "name": "Sprig of mistletoe",
+    "url": "/api/equipment/sprig-of-mistletoe",
+    "id": "204",
+    "categoryID": "0"
+  },
+  "205": {
+    "index": "spyglass",
+    "name": "Spyglass",
+    "url": "/api/equipment/spyglass",
+    "id": "205",
+    "categoryID": "0"
+  },
+  "206": {
+    "index": "stabling-1-day",
+    "name": "Stabling (1 day)",
+    "url": "/api/equipment/stabling-1-day",
+    "id": "206",
+    "categoryID": "18"
+  },
+  "207": {
+    "index": "staff",
+    "name": "Staff",
+    "url": "/api/equipment/staff",
+    "id": "207",
+    "categoryID": "0"
+  },
+  "208": {
+    "index": "studded-leather",
+    "name": "Studded Leather",
+    "url": "/api/equipment/studded-leather",
+    "id": "208",
+    "categoryID": "3"
+  },
+  "209": {
+    "index": "tent-two-person",
+    "name": "Tent, two-person",
+    "url": "/api/equipment/tent-two-person",
+    "id": "209",
+    "categoryID": "0"
+  },
+  "210": {
+    "index": "thieves-tools",
+    "name": "Thieves' tools",
+    "url": "/api/equipment/thieves-tools",
+    "id": "210",
+    "categoryID": "32"
+  },
+  "211": {
+    "index": "tinderbox",
+    "name": "Tinderbox",
+    "url": "/api/equipment/tinderbox",
+    "id": "211",
+    "categoryID": "0"
+  },
+  "212": {
+    "index": "tinkers-tools",
+    "name": "Tinker's tools",
+    "url": "/api/equipment/tinkers-tools",
+    "id": "212",
+    "categoryID": "32"
+  },
+  "213": {
+    "index": "torch",
+    "name": "Torch",
+    "url": "/api/equipment/torch",
+    "id": "213",
+    "categoryID": "0"
+  },
+  "214": {
+    "index": "totem",
+    "name": "Totem",
+    "url": "/api/equipment/totem",
+    "id": "214",
+    "categoryID": "0"
+  },
+  "215": {
+    "index": "trident",
+    "name": "Trident",
+    "url": "/api/equipment/trident",
+    "id": "215",
+    "categoryID": "35"
+  },
+  "216": {
+    "index": "vial",
+    "name": "Vial",
+    "url": "/api/equipment/vial",
+    "id": "216",
+    "categoryID": "0"
+  },
+  "217": {
+    "index": "viol",
+    "name": "Viol",
+    "url": "/api/equipment/viol",
+    "id": "217",
+    "categoryID": "32"
+  },
+  "218": {
+    "index": "wagon",
+    "name": "Wagon",
+    "url": "/api/equipment/wagon",
+    "id": "218",
+    "categoryID": "18"
+  },
+  "219": {
+    "index": "wand",
+    "name": "Wand",
+    "url": "/api/equipment/wand",
+    "id": "219",
+    "categoryID": "0"
+  },
+  "220": {
+    "index": "war-pick",
+    "name": "War pick",
+    "url": "/api/equipment/war-pick",
+    "id": "220",
+    "categoryID": "35"
+  },
+  "221": {
+    "index": "warhammer",
+    "name": "Warhammer",
+    "url": "/api/equipment/warhammer",
+    "id": "221",
+    "categoryID": "35"
+  },
+  "222": {
+    "index": "warhorse",
+    "name": "Warhorse",
+    "url": "/api/equipment/warhorse",
+    "id": "222",
+    "categoryID": "18"
+  },
+  "223": {
+    "index": "warship",
+    "name": "Warship",
+    "url": "/api/equipment/warship",
+    "id": "223",
+    "categoryID": "18"
+  },
+  "224": {
+    "index": "waterskin",
+    "name": "Waterskin",
+    "url": "/api/equipment/waterskin",
+    "id": "224",
+    "categoryID": "0"
+  },
+  "225": {
+    "index": "weavers-tools",
+    "name": "Weaver's tools",
+    "url": "/api/equipment/weavers-tools",
+    "id": "225",
+    "categoryID": "32"
+  },
+  "226": {
+    "index": "whetstone",
+    "name": "Whetstone",
+    "url": "/api/equipment/whetstone",
+    "id": "226",
+    "categoryID": "0"
+  },
+  "227": {
+    "index": "whip",
+    "name": "Whip",
+    "url": "/api/equipment/whip",
+    "id": "227",
+    "categoryID": "35"
+  },
+  "228": {
+    "index": "woodcarvers-tools",
+    "name": "Woodcarver's tools",
+    "url": "/api/equipment/woodcarvers-tools",
+    "id": "228",
+    "categoryID": "32"
+  },
+  "229": {
+    "index": "wooden-staff",
+    "name": "Wooden staff",
+    "url": "/api/equipment/wooden-staff",
+    "id": "229",
+    "categoryID": "0"
+  },
+  "230": {
+    "index": "yew-wand",
+    "name": "Yew wand",
+    "url": "/api/equipment/yew-wand",
+    "id": "230",
+    "categoryID": "0"
+  }
+}

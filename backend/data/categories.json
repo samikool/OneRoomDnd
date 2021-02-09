@@ -1,0 +1,224 @@
+{
+  "0": {
+    "index": "adventuring-gear",
+    "name": "Adventuring Gear",
+    "url": "/api/equipment-categories/adventuring-gear",
+    "id": "0"
+  },
+  "1": {
+    "index": "ammunition",
+    "name": "Ammunition",
+    "url": "/api/equipment-categories/ammunition",
+    "id": "1"
+  },
+  "2": {
+    "index": "arcane-foci",
+    "name": "Arcane Foci",
+    "url": "/api/equipment-categories/arcane-foci",
+    "id": "2"
+  },
+  "3": {
+    "index": "armor",
+    "name": "Armor",
+    "url": "/api/equipment-categories/armor",
+    "id": "3"
+  },
+  "4": {
+    "index": "artisans-tools",
+    "name": "Artisan's Tools",
+    "url": "/api/equipment-categories/artisans-tools",
+    "id": "4"
+  },
+  "5": {
+    "index": "druidic-foci",
+    "name": "Druidic Foci",
+    "url": "/api/equipment-categories/druidic-foci",
+    "id": "5"
+  },
+  "6": {
+    "index": "equipment-packs",
+    "name": "Equipment Packs",
+    "url": "/api/equipment-categories/equipment-packs",
+    "id": "6"
+  },
+  "7": {
+    "index": "gaming-sets",
+    "name": "Gaming Sets",
+    "url": "/api/equipment-categories/gaming-sets",
+    "id": "7"
+  },
+  "8": {
+    "index": "heavy-armor",
+    "name": "Heavy Armor",
+    "url": "/api/equipment-categories/heavy-armor",
+    "id": "8"
+  },
+  "9": {
+    "index": "holy-symbols",
+    "name": "Holy Symbols",
+    "url": "/api/equipment-categories/holy-symbols",
+    "id": "9"
+  },
+  "10": {
+    "index": "kits",
+    "name": "Kits",
+    "url": "/api/equipment-categories/kits",
+    "id": "10"
+  },
+  "11": {
+    "index": "land-vehicles",
+    "name": "Land Vehicles",
+    "url": "/api/equipment-categories/land-vehicles",
+    "id": "11"
+  },
+  "12": {
+    "index": "light-armor",
+    "name": "Light Armor",
+    "url": "/api/equipment-categories/light-armor",
+    "id": "12"
+  },
+  "13": {
+    "index": "martial-melee-weapons",
+    "name": "Martial Melee Weapons",
+    "url": "/api/equipment-categories/martial-melee-weapons",
+    "id": "13"
+  },
+  "14": {
+    "index": "martial-ranged-weapons",
+    "name": "Martial Ranged Weapons",
+    "url": "/api/equipment-categories/martial-ranged-weapons",
+    "id": "14"
+  },
+  "15": {
+    "index": "martial-weapons",
+    "name": "Martial Weapons",
+    "url": "/api/equipment-categories/martial-weapons",
+    "id": "15"
+  },
+  "16": {
+    "index": "medium-armor",
+    "name": "Medium Armor",
+    "url": "/api/equipment-categories/medium-armor",
+    "id": "16"
+  },
+  "17": {
+    "index": "mounts-and-other-animals",
+    "name": "Mounts and Other Animals",
+    "url": "/api/equipment-categories/mounts-and-other-animals",
+    "id": "17"
+  },
+  "18": {
+    "index": "mounts-and-vehicles",
+    "name": "Mounts and Vehicles",
+    "url": "/api/equipment-categories/mounts-and-vehicles",
+    "id": "18"
+  },
+  "19": {
+    "index": "musical-instruments",
+    "name": "Musical Instruments",
+    "url": "/api/equipment-categories/musical-instruments",
+    "id": "19"
+  },
+  "20": {
+    "index": "other-tools",
+    "name": "Other Tools",
+    "url": "/api/equipment-categories/other-tools",
+    "id": "20"
+  },
+  "21": {
+    "index": "potion",
+    "name": "Potion",
+    "url": "/api/equipment-categories/potion",
+    "id": "21"
+  },
+  "22": {
+    "index": "ring",
+    "name": "Ring",
+    "url": "/api/equipment-categories/ring",
+    "id": "22"
+  },
+  "23": {
+    "index": "rod",
+    "name": "Rod",
+    "url": "/api/equipment-categories/rod",
+    "id": "23"
+  },
+  "24": {
+    "index": "scroll",
+    "name": "Scroll",
+    "url": "/api/equipment-categories/scroll",
+    "id": "24"
+  },
+  "25": {
+    "index": "shields",
+    "name": "Shields",
+    "url": "/api/equipment-categories/shields",
+    "id": "25"
+  },
+  "26": {
+    "index": "simple-melee-weapons",
+    "name": "Simple Melee Weapons",
+    "url": "/api/equipment-categories/simple-melee-weapons",
+    "id": "26"
+  },
+  "27": {
+    "index": "simple-ranged-weapons",
+    "name": "Simple Ranged Weapons",
+    "url": "/api/equipment-categories/simple-ranged-weapons",
+    "id": "27"
+  },
+  "28": {
+    "index": "simple-weapons",
+    "name": "Simple Weapons",
+    "url": "/api/equipment-categories/simple-weapons",
+    "id": "28"
+  },
+  "29": {
+    "index": "staff",
+    "name": "Staff",
+    "url": "/api/equipment-categories/staff",
+    "id": "29"
+  },
+  "30": {
+    "index": "standard-gear",
+    "name": "Standard Gear",
+    "url": "/api/equipment-categories/standard-gear",
+    "id": "30"
+  },
+  "31": {
+    "index": "tack-harness-and-drawn-vehicles",
+    "name": "Tack, Harness, and Drawn Vehicles",
+    "url": "/api/equipment-categories/tack-harness-and-drawn-vehicles",
+    "id": "31"
+  },
+  "32": {
+    "index": "tools",
+    "name": "Tools",
+    "url": "/api/equipment-categories/tools",
+    "id": "32"
+  },
+  "33": {
+    "index": "wand",
+    "name": "Wand",
+    "url": "/api/equipment-categories/wand",
+    "id": "33"
+  },
+  "34": {
+    "index": "waterborne-vehicles",
+    "name": "Waterborne Vehicles",
+    "url": "/api/equipment-categories/waterborne-vehicles",
+    "id": "34"
+  },
+  "35": {
+    "index": "weapon",
+    "name": "Weapon",
+    "url": "/api/equipment-categories/weapon",
+    "id": "35"
+  },
+  "36": {
+    "index": "wondrous-items",
+    "name": "Wondrous Items",
+    "url": "/api/equipment-categories/wondrous-items",
+    "id": "36"
+  }
+}

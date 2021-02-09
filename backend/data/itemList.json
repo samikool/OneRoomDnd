@@ -1,0 +1,18 @@
+{
+    "2" : {
+        "itemID": 2,
+        "quantity": 10
+    },
+    "4":{
+        "itemID": 4,
+        "quantity": 2
+    },
+    "5":{
+        "itemID": 5,
+        "quantity": 3
+    },
+    "48":{
+        "itemID": 48,
+        "quantity": 1
+    }
+}

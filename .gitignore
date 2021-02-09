@@ -1,2 +1,7 @@
 node_modules
 .eslintcache
+*.http
+.env
+*.sql
+build/
+package-lock-.json

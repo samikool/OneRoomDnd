@@ -1,0 +1,37 @@
+{
+  "0": {
+    "index": "yew-wand",
+    "name": "Yew wand",
+    "url": "/api/equipment/yew-wand",
+    "id": "230",
+    "categoryID": "0"
+  },
+  "3": {
+    "index": "studded-leather",
+    "name": "Studded Leather",
+    "url": "/api/equipment/studded-leather",
+    "id": "208",
+    "categoryID": "3"
+  },
+  "18": {
+    "index": "warship",
+    "name": "Warship",
+    "url": "/api/equipment/warship",
+    "id": "223",
+    "categoryID": "18"
+  },
+  "32": {
+    "index": "woodcarvers-tools",
+    "name": "Woodcarver's tools",
+    "url": "/api/equipment/woodcarvers-tools",
+    "id": "228",
+    "categoryID": "32"
+  },
+  "35": {
+    "index": "whip",
+    "name": "Whip",
+    "url": "/api/equipment/whip",
+    "id": "227",
+    "categoryID": "35"
+  }
+}

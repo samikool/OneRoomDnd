@@ -86,7 +86,6 @@ pipeline {
             }
             steps {
                 sh  """
-                    npm install --prefix frontend
                     npm run build --prefix frontend
                     sudo rm -rf /srv/http/oneRoomDnd/production/*
                     sudo cp frontend/build/* -rf /srv/http/oneRoomDnd/production/
@@ -100,15 +99,14 @@ pipeline {
             }
             steps {
                 sh  """
-                    sudo pm2 stop /backends/oneRoomDnd/ecosystem.config.js 1>/dev/null
+                    sudo npm run stop --prefix /backends/oneRoomDnd/production
 
-                    sudo rm -rf /backend/oneRoomDnd/*
-                    sudo cp backend/*.js backend/package.json /backends/oneRoomDnd/ -rf
-                    sudo cp /backends/oneRoomDnd/env/.env /backends/oneRoomDnd/
-                    sudo npm --prefix /backends/oneRoomDnd/ install
+                    sudo rm -rf /backends/oneRoomDnd/production/*
+                    sudo cp backend/*.js backend/package.json backend/routes /backends/oneRoomDnd/production/ -rf
+                    sudo cp /backends/oneRoomDnd/env/.env /backends/oneRoomDnd/production/
+                    sudo npm install --prefix /backends/oneRoomDnd/production/ 
                     
-                    cd /backends/oneRoomDnd
-                    sudo pm2 start ecosystem.config.js 1>/dev/null
+                    sudo npm run deploy:production --prefix /backends/oneRoomDnd/production
                 """
             }
         }

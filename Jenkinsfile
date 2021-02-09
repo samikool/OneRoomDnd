@@ -24,7 +24,8 @@ pipeline {
         stage('Build Backend') {
             steps {
                 sh """
-                    'npm install --prefix ../backend' 
+                    node --check backend/*.js
+                    npm install --prefix backend 
                 """
                 }
         }

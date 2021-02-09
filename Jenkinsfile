@@ -69,10 +69,10 @@ pipeline {
             }
             steps{
                sh  """
-                    #sudo npm run stop:staging --prefix /backends/oneRoomDnd/staging
+                    sudo npm run stop:staging --prefix /backends/oneRoomDnd/staging
 
                     sudo rm -rf /backends/oneRoomDnd/staging/*
-                    sudo cp backend/*.js backend/package.json backend/routes/*.js /backends/oneRoomDnd/staging/ -rf
+                    sudo cp backend/*.js backend/package.json backend/routes /backends/oneRoomDnd/staging/ -rf
                     sudo cp /backends/oneRoomDnd/env/.env /backends/oneRoomDnd/staging/
                     sudo npm --prefix /backends/oneRoomDnd/staging/ install
                     

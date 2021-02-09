@@ -76,7 +76,7 @@ pipeline {
                     sudo cp /backends/oneRoomDnd/env/.env /backends/oneRoomDnd/staging/
                     sudo npm --prefix /backends/oneRoomDnd/staging/ install
                     
-                    sudo npm deploy:staging --prefix /backends/oneRoomDnd/staging
+                    sudo npm run deploy:staging --prefix /backends/oneRoomDnd/staging
                 """
             }
         }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import { getFromDndAPI } from './adapters/get'
 import {
     Grid,
@@ -40,9 +40,10 @@ export function ClassViewer(){
       character: {},
     })
 
-    useEffect(() => {
-      let ignore = false
+    const mounted = useRef()
 
+    useEffect(() => {
+      
       async function fetchData(){
         let raceList = getFromDndAPI('/api/races')
         let subraceList = getFromDndAPI('/api/subraces')
@@ -54,21 +55,21 @@ export function ClassViewer(){
         classList = await classList
         subclassList = await subclassList
 
-        
-        if(!ignore){
-          setState({
-            ...state,
-            raceList: raceList.results,
-            subraceList: subraceList.results,
-            classList: classList.results,
-            subclassList: subclassList.results
-          })
-        }
-        
+        setState({
+          ...state,
+          raceList: raceList.results,
+          subraceList: subraceList.results,
+          classList: classList.results,
+          subclassList: subclassList.results
+        })
       }
-   
-      fetchData()
-      return () => {ignore = true}
+
+      if(!mounted.current){
+        fetchData()
+        mounted.current = true
+      }
+        
+
     },[state])
 
     const handleChange = (e) => {
@@ -81,11 +82,11 @@ export function ClassViewer(){
     function renderMenuItems(items, name, label){
       return(
         <Select
-        value={state[name]}
-        label={label}
-        labelId={name}
-        name={name}
-        onChange={handleChange}
+          value={state[name]}
+          label={label}
+          labelId={name}
+          name={name}
+          onChange={handleChange}
         > 
           <MenuItem key={'None'} value=''><em>None</em></MenuItem>
           {items.map((item) => {
@@ -101,11 +102,11 @@ export function ClassViewer(){
     function renderLevelItems(levels, name, label){
       return(
         <Select
-        value={state[name]}
-        label={label}
-        labelId={name}
-        name={name}
-        onChange={handleChange}
+          value={state[name]}
+          label={label}
+          labelId={name}
+          name={name}
+          onChange={handleChange}
         >
           <MenuItem key={'None'} value=''><em>None</em></MenuItem>
           {levels.map((level) => {
@@ -126,38 +127,37 @@ export function ClassViewer(){
           justify="center"
           alignItems="center"
         >
-            <Grid item>
-              <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="race">Race</InputLabel>
-                  {renderMenuItems(state.raceList, 'race','Race')}
-              </FormControl>  
-            </Grid>
-            <Grid item>
-              <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="subrace">Subrace</InputLabel>
-                  {renderMenuItems(state.subraceList, 'subrace', 'Subrace')}
-              </FormControl>  
-            </Grid>
-            <Grid item>
-              <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="dclass">Class</InputLabel>
-                  {renderMenuItems(state.classList, 'class', 'Class')}
-              </FormControl>  
-            </Grid>
-            <Grid item>
-              <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="subclass">Subclass</InputLabel>
-                  {renderMenuItems(state.subclassList, 'subclass', 'Subclass')}
-              </FormControl>  
-            </Grid>
-            <Grid item>
-              <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="level">Level</InputLabel>
-                  {renderLevelItems([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 'level', 'Level')}
-              </FormControl>  
-            </Grid>
+          <Grid item>
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="race">Race</InputLabel>
+                {renderMenuItems(state.raceList, 'race','Race')}
+            </FormControl>  
           </Grid>
-          
+          <Grid item>
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="subrace">Subrace</InputLabel>
+                {renderMenuItems(state.subraceList, 'subrace', 'Subrace')}
+            </FormControl>  
+          </Grid>
+          <Grid item>
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="dclass">Class</InputLabel>
+                {renderMenuItems(state.classList, 'class', 'Class')}
+            </FormControl>  
+          </Grid>
+          <Grid item>
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="subclass">Subclass</InputLabel>
+                {renderMenuItems(state.subclassList, 'subclass', 'Subclass')}
+            </FormControl>  
+          </Grid>
+          <Grid item>
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel id="level">Level</InputLabel>
+                {renderLevelItems([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 'level', 'Level')}
+            </FormControl>  
+          </Grid>
+        </Grid>
       </div>
           
     )

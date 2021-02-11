@@ -5,7 +5,6 @@ import {
     FormControl,
     InputLabel,
     Select,
-    Input,
     MenuItem,
     makeStyles
 } from'@material-ui/core'
@@ -70,7 +69,7 @@ export function ClassViewer(){
    
       fetchData()
       return () => {ignore = true}
-    }, [])
+    },[state])
 
     const handleChange = (e) => {
       setState({

@@ -3,13 +3,13 @@ const db = require('../database')
 
 
 router.get('/', async (req,res) => {
-    //console.log('hit')
-    let itemList = await db.getItemList()
-    let resData = {}
+    const itemList = await db.select('itemList', '*')
+    const resData = {}
      
     for(let item of itemList){
-        let itemData = await db.getItem(item.itemID)
-        itemData = itemData[0]
+
+        const itemData = await db.select('item', '*', 'id', item.itemID)
+
         itemData.quantity = item.quantity
 
         resData[item.itemID] = itemData
@@ -21,19 +21,17 @@ router.get('/', async (req,res) => {
 router.post('/', async (req,res) => {
     const name = req.body['name']
     let quantity = parseInt(req.body['quantity'])
+    const item = await db.select('item', '*', 'index', name)
 
-    let item = await db.getItemByName(name)
-    item = item[0]
 
     if(!item) res.status(406).send('Item does not exist')
     else{
-        let listItem = await db.getItemFromList(item.id)
-        listItem = listItem[0]
+        const listItem = await db.select('itemList', '*', 'itemID', item.id)
 
         //item exists
         if(listItem){
             quantity += listItem.quantity
-            await db.updateItemQuantity(item.id, quantity)
+            await db.update('itemList', 'quantity', quantity, 'itemID', item.id)
         }
         //item doesnt
         else{
@@ -50,16 +48,15 @@ router.delete('/', async (req,res) => {
     const name = req.body['name']
     let quantity = parseInt(req.body['quantity'])
 
-    let item = await db.getItemByName(name)
-    item = item[0]
-
-    let listItem = await db.getItemFromList(item.id)
-    listItem = listItem[0]
+    const item = await db.select('item', '*', 'index', name)
+    const listItem = await db.select('itemList', '*', 'itemID', item.id)
 
     if(listItem){
         quantity = listItem.quantity - quantity
-        if(quantity <= 0) await db.removeItemFromList(item.id)
-        else await db.updateItemQuantity(item.id, quantity)
+        if(quantity <= 0) 
+            await db.del('itemList', 'itemID', item.id)
+        else 
+            await db.update('itemList', 'quantity', quantity, 'itemID', item.id) 
 
         res.status(200).json({success: true})
     }else

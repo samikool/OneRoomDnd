@@ -35,14 +35,21 @@ app.get('/', async (req,res) => {
 app.use('/dndAPI*', require('./routes/dndAPI'))
 app.use('/itemList', require('./routes/itemList'))
 
-if(process.env.NODE_ENV === 'development'){
+
+if(process.env.NODE_ENV === 'development') 
+    startDev()
+else 
+    startProd()
+
+function startDev(){
     app.listen(port, () => {console.log("Listening on port:", port)})
-}else{
+}
+
+function startProd(){
     https.createServer({
         key: privateKey,
         cert: certificate
     }, app).listen(port, () => {console.log("Listening on port:", port)})    
 }
-
 
 module.exports.app=app

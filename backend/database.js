@@ -21,11 +21,7 @@ async function query(query_str, values){
     }
 }
 
-async function insertTest(name1, name2, name3){
-    const query_str = "INSERT INTO test (name, name2, name3) VALUES (?,?,?)"
-    const values = [name1, name2, name3]
-    return await query(query_str, values)
-}
+
 
 async function insertCategory(name, url){
     const query_str = "INSERT INTO category (`index`, name, url) VALUES (?,?,?)"
@@ -45,47 +41,36 @@ async function insertItemList(itemID, quantity){
     return await query(query_str, values)
 }
 
-async function getItem(id){
-    const query_str = "SELECT * FROM item WHERE id=?"
-    const values = [id]
-    return await query(query_str, values)
-}
+async function select(table, selectColumn, conditionColumn, conditionValue){
+    let query_str = "SELECT "
+    query_str += selectColumn + " "
+    query_str += "FROM " + table + " "
 
-async function getItemByName(name){
-    const query_str = "SELECT * FROM item WHERE `index`=?"
-    const values = [name]
-    return await query(query_str, values)
-}
+    if(conditionColumn) {
+        query_str += "WHERE `"+conditionColumn+"`='"+conditionValue+"'"
+        const res = await query(query_str)
+        return res[0]
+    }
 
-async function getAllItems(){
-    const query_str = "SELECT * FROM item"
     return await query(query_str)
 }
 
-async function getItemList(){
-    const query_str = "SELECT * FROM itemList"
+async function update(table, upCol, upVal, conCol, conVal){
+    if(!conCol) return new Error('Condition must be defined')
+
+    const query_str = "UPDATE " + table 
+    + " SET `" + upCol + "`='" + upVal 
+    + "' WHERE `" + conCol + "`='" + conVal + "'"
     return await query(query_str)
 }
 
-async function getItemFromList(id){
-    const query_str = "SELECT * from itemList WHERE itemID=?"
-    const values = [id]
-    return await query(query_str, values)
+async function del(table, conCol, conVal){
+    if(!conCol) return new Error('Condition must be defined')
+
+    const query_str = "DELETE FROM " + table 
+    + " WHERE `" + conCol + "`='" + conVal + "'"
+    return await query(query_str)
 }
-
-async function updateItemQuantity(id, quantity){
-    const query_str = "UPDATE itemList SET quantity=? WHERE itemID=?"
-    const values = [quantity, id]
-    return await query(query_str, values)
-}
-
-async function removeItemFromList(id){
-    const query_str = "DELETE FROM itemList WHERE itemID=?"
-    const values = [id]
-    return await query(query_str, values)
-}
-
-
 
 function close(){
     db.end()
@@ -105,18 +90,11 @@ function printSqlError(e){
 }
 
 module.exports = {
-    insertTest,
-
     insertCategory,
     insertItem,
     insertItemList,
-    
-    getItem,
-    getItemByName,
-    getItemFromList,
-    getAllItems,
-    removeItemFromList,
-    getItemList,
-    updateItemQuantity,
+    select,
+    update,
+    del,
     close
 }

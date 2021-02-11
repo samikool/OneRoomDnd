@@ -12,6 +12,7 @@ pipeline {
                 sh """
                     #echo "not sure what todo here rn..."
                     npm install --prefix frontend
+                    npm run build:staging --prefix frontend
                 """
             }
         }

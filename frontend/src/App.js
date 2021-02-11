@@ -6,7 +6,10 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <Link to={'/apibrowser'}>Api Browser</Link>
+                <span>
+                    <Link to={'/apibrowser'}>Api Browser</Link>
+                    <Link to={'/classviewer'}>Class Viewer</Link> 
+                </span>
                 <SharedItems />
             </div>
             

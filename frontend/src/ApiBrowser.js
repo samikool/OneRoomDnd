@@ -49,14 +49,14 @@ class ApiBrowser extends React.Component {
 
   renderRoot(list){
     if(list.results) return null
-    
+
     return(
         <ul>{
           Object.keys(list).map( (name) => {
             let url = list[name]
             return(
               <li key={name}>
-                <Link to={url}>{name}</Link>
+                <Link to={url}>{name}</Link>              
               </li>)
           })
         }</ul>
@@ -91,7 +91,12 @@ class ApiBrowser extends React.Component {
   async componentDidMount(){    
     const path = this.props.location.pathname.replace('/apibrowser','')
     const res = await getFromDndAPI(path)
-    this.setState({lastGet: res})
+
+    if(!res.ok) console.error('error fetching data')
+      else{
+        delete res.ok
+        this.setState({lastGet: res})
+      }
   }
 
   async componentDidUpdate(prevProps, prevState, snapshot){   
@@ -99,7 +104,13 @@ class ApiBrowser extends React.Component {
     if(this.locationDidChange(prevProps)){
       const path = this.props.location.pathname.replace('/apibrowser','')
       const res = await getFromDndAPI(path)
-      this.setState({lastGet: res})
+
+      if(!res.ok) console.error('error fetching data')
+      else{
+        delete res.ok
+        this.setState({lastGet: res})
+      }
+      
     }
   }
 
@@ -115,7 +126,7 @@ class ApiBrowser extends React.Component {
             <button onClick={this.handleHome}>Home</button>  
           </div>      
           <div><span> {this.props.location.pathname.replace('/apibrowser','')}</span></div>
-          <Link to={'..'}>..</Link>
+          <Link to='..'>..</Link>
         
           {this.renderLastGet(this.state.lastGet)}
 

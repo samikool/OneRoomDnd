@@ -32,7 +32,9 @@ app.get('/', async (req,res) => {
     res.send('You found me')
 })
 
+
 app.use('/dndAPI*', require('./routes/dndAPI'))
+app.use('/spells', require('./routes/spells'))
 app.use('/itemList', require('./routes/itemList'))
 
 

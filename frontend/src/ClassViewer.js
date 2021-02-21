@@ -9,7 +9,7 @@ import {
     makeStyles
 } from'@material-ui/core'
 
-import {CharacterBuilder} from './CharacterBuilder'
+import {CharacterBuilder_dep} from './CharacterBuilder_dep'
 
 // import Race from './Race'
 
@@ -152,7 +152,7 @@ export function ClassViewer(){
         </Grid>
         {/* <Race race={state.raceList.find((item) => {return item.index === state.race})}/> */}
         {/* {state.buildingCharacter ? renderNextOption() : null} */}
-        {building ? <CharacterBuilder race={race} subrace={subrace} clas={clas} subclass={subclass} level={level} /> : null}
+        {/* {building ? <CharacterBuilder_dep race={race} subrace={subrace} clas={clas} subclass={subclass} level={level} /> : null} */}
       </div>
           
     )

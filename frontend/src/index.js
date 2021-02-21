@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import App from './App'
 import ApiBrowser from './ApiBrowser';
-import {ClassViewer} from './ClassViewer'
+import {CharacterBuilder} from './CharacterBuilder'
 
 ReactDOM.render(
   // <React.StrictMode>
     <Router basename='/'>
       <Switch>
         <Route exact path='/' component={App}></Route>
-        <Route path='/classviewer' component={ClassViewer}></Route>
+        <Route path='/classviewer' component={CharacterBuilder}></Route>
         <Route path='/apibrowser*'>
           <Router basename='/apibrowser'>
             <Switch>

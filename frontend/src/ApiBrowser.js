@@ -2,7 +2,7 @@ import React from 'react'
 import{
   Link,
 } from "react-router-dom"
-import Leaf from './API-Components/Leaf'
+import Leaf from './api-components/Leaf'
 import {getFromDndAPI} from './adapters/get'
 
 const JSONPretty  = require('react-json-pretty')

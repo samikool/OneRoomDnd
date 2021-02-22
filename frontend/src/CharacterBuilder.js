@@ -4,21 +4,32 @@ import {RaceBuilder} from './builders/RaceBuilder'
 // import {getFromDndAPI} from './adapters/get'
 
 export function CharacterBuilder(){
-    const [chosenRace, setChosenRace] = useState(null)
-    const [chosenSubrace, setChosenSubrace] = useState(null)
+    const [race, setRace] = useState(null)
+    const [subrace, setSubrace] = useState(null)
     const [raceChoices, setRaceChoices] = useState({})
     const [raceValid, setRaceValid] = useState(false)
     const [class_, setClass_] = useState(null)
     const [subclass, setSubclass] = useState(null)
+    const [classChoices, setClassChoices] = useState({})
+    const [classValid, setClassValid] = useState(false)
 
     useEffect(() => {
-        if(!chosenRace && !chosenSubrace) return
+        if(!race && !subrace) return
 
-        console.log(chosenRace)
-        console.log(chosenSubrace ? chosenSubrace : 'Subrace not chosen')
+        console.log(race)
+        console.log(subrace ? subrace : 'Subrace not chosen')
         // 
 
-    }, [chosenRace, chosenSubrace])
+    }, [race, subrace])
+
+    useEffect(() => {
+        if(!class_ && !subclass) return
+
+        console.log(class_)
+        console.log(subclass ? subclass : 'Subrace not chosen')
+        // 
+
+    }, [class_, subclass])
 
     useEffect(() => {
         console.log('Race choices made:',raceChoices)
@@ -27,17 +38,19 @@ export function CharacterBuilder(){
     return(
         <div>
             <RaceBuilder 
-                race={chosenRace} setRace={setChosenRace} 
-                subrace={chosenSubrace} setSubrace={setChosenSubrace} 
+                race={race} setRace={setRace} 
+                subrace={subrace} setSubrace={setSubrace} 
                 raceChoices={raceChoices} setRaceChoices={setRaceChoices}
-                valid={raceValid} setValid={setRaceValid}
+                setValid={setRaceValid}
             />
-            {raceValid ? <ClassBuilder
-                class={class_} setClass={setClass_}
+            {raceValid ? 
+            <ClassBuilder
+                class_={class_} setClass_={setClass_}
                 subclass={subclass} setSubclass={setSubclass}
+                classChoices={classChoices} setClassChoices={setClassChoices}
+                valid={classValid} setValid={setClassValid}
             /> : null}
+           {raceValid ? <p>{classValid ? "true" : 'false'}</p> : null}
         </div>
     )
 }
-
-export default CharacterBuilder

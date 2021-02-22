@@ -1,8 +1,9 @@
 import {useState, useEffect, useLayoutEffect} from 'react'
 import { getFromDndAPI } from '../adapters/get'
 import {Choice} from './Choice'
-import TraitTable from '../TraitTable'
+import {TraitTable} from '../TraitTable'
 import {ProficiencyTable} from '../ProficiencyTable'
+import { ResolvingTable } from '../ResolvingTable'
 
 export function RaceBuilder(props){
     const [race, setRace] = [props.race, props.setRace]
@@ -52,7 +53,13 @@ export function RaceBuilder(props){
     }, [race, setRaceOptions, setResolvedChoices, setRaceValid])
 
     useLayoutEffect(() => {
-        if(!race) return
+        if(!race){ 
+            setSubrace(null)
+            setSubraceChoice(null)
+            setSubraceOptions([])
+            setSubraceValid(false)
+            return
+        }
 
         async function fetchSubraces(){
             const subraceChoices = []
@@ -167,11 +174,23 @@ export function RaceBuilder(props){
                     {renderChoices(raceOptions)}
                     {renderChoices(subraceOptions)}
                 </span>
-                {race ? <TraitTable race={race} subrace={subrace}/> : null}
-                {race ? <ProficiencyTable race={race} subrace={subrace}/> : null}
+                {race ? <ResolvingTable 
+                    data={subrace ? race.traits.concat(subrace.racial_traits) : race.traits} 
+                    headers={['Trait', 'Trait Description']}
+                    keys={['name', 'desc']}
+                    nothingMsg={'This race has no special traits'}
+                    defaultDesc={''}
+                /> : null}
+                {race ? <ResolvingTable 
+                    data={subrace ? 
+                        race.starting_proficiencies.concat(subrace.starting_proficiencies) 
+                        : race.starting_proficiencies}
+                    headers={['Proficiency', 'Proficiency Description']}
+                    keys={['name', 'desc']}
+                    nothingMsg={'This race has no special proficiencies!'}
+                    defaultDesc={'You have proficiency in this skill or with this weapon'}
+                /> : null}
             </span>
         </div>
     )
 }
-
-export default RaceBuilder

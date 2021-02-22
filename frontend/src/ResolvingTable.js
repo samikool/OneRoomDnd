@@ -13,16 +13,10 @@ export function ResolvingTable(props){
 
     // console.log('unresolved data:', unresolvedData)
 
-    const race = props.race
-    const subrace = props.subrace
-
-    const [traits, setTraits] = useState(null)
-    const [subtraits, setSubtraits] = useState(null)
-
     useLayoutEffect(() => {
-        async function fetchTraits(){
+        async function fetchData(){
             const rData = []
-            
+
             for(let f of unresolvedData)
                 rData.push(getFromDndAPI(f.url))
             
@@ -31,48 +25,8 @@ export function ResolvingTable(props){
 
             setResolvedData(rData)
         }
-        fetchTraits()
+        fetchData()
     }, [unresolvedData])
-
-    // useLayoutEffect(() => {
-    //     if(!race) {
-    //         setTraits(null)    
-    //         return
-    //     }
-
-    //     async function fetchTraits(){
-    //         const resolvedTraits = []
-            
-    //         for(let f of race.traits)
-    //             resolvedTraits.push(getFromDndAPI(f.url))
-            
-    //         for(let i in resolvedTraits)
-    //             resolvedTraits[i] = await resolvedTraits[i]
-
-    //         setTraits(resolvedTraits)
-    //     }
-    //     fetchTraits()
-    // }, [race])
-
-    // useLayoutEffect(() => {
-    //     if(!subrace) {
-    //         setSubtraits(null)
-    //         return
-    //     }
-
-    //     async function fetchTraits(){
-    //         const resolvedTraits = []
-
-    //         for(let f of subrace.racial_traits)
-    //             resolvedTraits.push(getFromDndAPI(f.url))
-            
-    //         for(let i in resolvedTraits)
-    //             resolvedTraits[i] = await resolvedTraits[i]
-
-    //         setSubtraits(resolvedTraits)
-    //     }
-    //     fetchTraits()
-    // }, [subrace])
 
     function renderHead(headers){
         // console.log('rendering headers:',headers)

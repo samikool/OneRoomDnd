@@ -1,8 +1,6 @@
 import {useState, useEffect, useLayoutEffect} from 'react'
 import { getFromDndAPI } from '../adapters/get'
 import {Choice} from './Choice'
-import {TraitTable} from '../TraitTable'
-import {ProficiencyTable} from '../ProficiencyTable'
 import { ResolvingTable } from '../ResolvingTable'
 
 export function RaceBuilder(props){

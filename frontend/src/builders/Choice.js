@@ -35,6 +35,17 @@ export function Choice(props){
     }, [curChoice, setChoice, props.choice.from])
 
     function renderMenuItems(choices){
+        // console.log(props.choice)
+        if(props.choice.type === 'level'){
+            return(
+                choices.map((choice, i) => {
+                    return(
+                      <MenuItem key={choice+i} value={i}>{choice}</MenuItem>
+                    )}
+                )
+            )
+        }
+        
         return(
             choices.map((choice, i) => {
                 return(

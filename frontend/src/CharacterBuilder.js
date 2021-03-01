@@ -6,12 +6,16 @@ import {RaceBuilder} from './builders/RaceBuilder'
 export function CharacterBuilder(){
     const [race, setRace] = useState(null)
     const [subrace, setSubrace] = useState(null)
-    const [raceChoices, setRaceChoices] = useState({})
+    const [raceOptions, setRaceOptions] = useState({})
     const [raceValid, setRaceValid] = useState(false)
+
     const [class_, setClass_] = useState(null)
     const [subclass, setSubclass] = useState(null)
-    const [classChoices, setClassChoices] = useState({})
+    const [classOptions, setClassOptions] = useState({})
     const [classValid, setClassValid] = useState(false)
+
+    const [level, setLevel] = useState(null)
+    const [levelOptions, setLevelOptions] = useState({})
 
     useEffect(() => {
         if(!race && !subrace) return
@@ -26,31 +30,40 @@ export function CharacterBuilder(){
         if(!class_ && !subclass) return
 
         console.log(class_)
-        console.log(subclass ? subclass : 'Subrace not chosen')
+        console.log(subclass ? subclass : 'Subclass not chosen')
         // 
 
     }, [class_, subclass])
 
     useEffect(() => {
-        console.log('Race choices made:',raceChoices)
-    }, [raceChoices])
+        console.log('Level:', level)
+    }, [level   ])
+
+    useEffect(() => {
+        console.log('Race Options made:', raceOptions)
+    }, [raceOptions])
+
+    useEffect(() => {
+        console.log('Class Options made:', classOptions)
+    }, [classOptions])
 
     return(
         <div>
             <RaceBuilder 
                 race={race} setRace={setRace} 
                 subrace={subrace} setSubrace={setSubrace} 
-                raceChoices={raceChoices} setRaceChoices={setRaceChoices}
+                raceOptions={raceOptions} setRaceOptions={setRaceOptions}
                 setValid={setRaceValid}
             />
             {raceValid ? 
             <ClassBuilder
                 class_={class_} setClass_={setClass_}
+                level={level} setLevel={setLevel}
                 subclass={subclass} setSubclass={setSubclass}
-                classChoices={classChoices} setClassChoices={setClassChoices}
+                classOptions={classOptions} setClassOptions={setClassOptions}
                 valid={classValid} setValid={setClassValid}
             /> : null}
-           {raceValid ? <p>{classValid ? "true" : 'false'}</p> : null}
+           {raceValid && classValid ? <p>true</p> : <p>false</p>}
         </div>
     )
 }

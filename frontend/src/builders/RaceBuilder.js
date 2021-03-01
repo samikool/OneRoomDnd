@@ -6,7 +6,7 @@ import { ResolvingTable } from '../ResolvingTable'
 export function RaceBuilder(props){
     const [race, setRace] = [props.race, props.setRace]
     const [subrace, setSubrace] = [props.subrace, props.setSubrace]
-    const [resolvedChoices, setResolvedChoices] = [props.raceChoices, props.setRaceChoices]
+    const [resolvedOptions, setResolvedOptions] = [props.raceOptions, props.setRaceOptions]
     const setValid = props.setValid
 
     const [raceChoice, setRaceChoice] = useState(null)
@@ -41,23 +41,18 @@ export function RaceBuilder(props){
     }, [])
 
     useLayoutEffect(() => {
-        setRaceOptions([])
-        setResolvedChoices({})
-        if(!race){
+        if(!race){ //reset everything
+            setRaceOptions([])
+            setResolvedOptions({}) 
             setRaceValid(false)
-            return
-        }
-        setRaceValid(true)
-    }, [race, setRaceOptions, setResolvedChoices, setRaceValid])
-
-    useLayoutEffect(() => {
-        if(!race){ 
             setSubrace(null)
             setSubraceChoice(null)
             setSubraceOptions([])
             setSubraceValid(false)
             return
         }
+
+        setRaceValid(true)
 
         async function fetchSubraces(){
             const subraceChoices = []
@@ -76,7 +71,7 @@ export function RaceBuilder(props){
             })
         }
 
-        if(race.subraces.length > 0){
+        if(race.subraces.length > 0){ //need subrace
             fetchSubraces()
             setSubraceValid(false)
         }else{
@@ -85,7 +80,7 @@ export function RaceBuilder(props){
             setSubraceOptions([])
             setSubraceValid(true)
         }
-    },[race, setSubrace, setSubraceChoice, setSubraceOptions, setSubraceValid])
+    },[race, setRaceOptions, setResolvedOptions, setRaceValid, setSubrace, setSubraceChoice, setSubraceOptions, setSubraceValid])
 
     useLayoutEffect(() => {
         if(subrace) setSubraceValid(true)
@@ -101,7 +96,8 @@ export function RaceBuilder(props){
                     choose: race[k].choose,
                     from: race[k].from,
                     id: 'race-option-'+race[k].type,
-                    label: 'Race '+race[k].type
+                    label: 'Race '+race[k].type,
+                    type: race[k].type
                 })
             }
         }
@@ -118,8 +114,9 @@ export function RaceBuilder(props){
                 {
                     choose: subrace[k].choose,
                     from: subrace[k].from,
-                    id: 'race-option-'+subrace[k].type,
-                    label: 'Race '+subrace[k].type
+                    id: 'subrace-option-'+subrace[k].type,
+                    label: 'Subrace '+subrace[k].type,
+                    type: subrace[k].type
                 })
             }
         }
@@ -131,16 +128,16 @@ export function RaceBuilder(props){
     }, [subrace])
 
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         let v = true
-        for(let k in resolvedChoices){
-            if(!resolvedChoices[k].selected){
+        for(let k in resolvedOptions){
+            if(!resolvedOptions[k].selected){
                 v = false
                 break
             }
         }
         setOptionsValid(v)
-    }, [resolvedChoices])
+    }, [resolvedOptions])
 
     useLayoutEffect(() => {
         setValid(raceValid && subraceValid && optionsValid)
@@ -148,7 +145,7 @@ export function RaceBuilder(props){
 
 
 
-    function renderChoices(choiceArray){
+    function renderOptions(choiceArray){
         return choiceArray.map((choice,i) => {
             return <Choice key={'choice'+i} choice={choice} setChoice={(e) => {handleChoice(e, choice)}}/>
         })
@@ -157,9 +154,9 @@ export function RaceBuilder(props){
     function handleChoice(e, choice){
         const id = choice.id
 
-        if(!resolvedChoices[id] || resolvedChoices[id].selected !== e){
+        if(!resolvedOptions[id] || resolvedOptions[id].selected !== e){
             const c = {choice: choice, selected: e}
-            setResolvedChoices((prevState) => { return( {...prevState, [id]: c})})
+            setResolvedOptions((prevState) => { return( {...prevState, [id]: c})})
         }
     }
 
@@ -168,10 +165,10 @@ export function RaceBuilder(props){
             <span>
                 {raceChoice ? <Choice setChoice={setRace} choice={raceChoice}/> : null}
                 {subraceChoice ? <Choice setChoice={setSubrace} choice={subraceChoice}/> : null}
-                <span>
-                    {renderChoices(raceOptions)}
-                    {renderChoices(subraceOptions)}
-                </span>
+
+                {renderOptions(raceOptions)}
+                {renderOptions(subraceOptions)}
+
                 {race ? <ResolvingTable 
                     data={subrace ? race.traits.concat(subrace.racial_traits) : race.traits} 
                     headers={['Trait', 'Trait Description']}

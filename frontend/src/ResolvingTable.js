@@ -3,15 +3,12 @@ import {Table, TableRow, TableCell, TableHead, TableBody} from '@material-ui/cor
 import { getFromDndAPI } from './adapters/get'
 
 export function ResolvingTable(props){
-
     const unresolvedData = props.data
     const headers = props.headers
     const keys = props.keys
     const nothingMsg = props.nothingMsg
     const defaultDesc = props.defaultDesc
     const [resolvedData, setResolvedData] = useState([])
-
-    // console.log('unresolved data:', unresolvedData)
 
     useLayoutEffect(() => {
         async function fetchData(){
@@ -29,14 +26,12 @@ export function ResolvingTable(props){
     }, [unresolvedData])
 
     function renderHead(headers){
-        // console.log('rendering headers:',headers)
         return headers.map((header) => {
             return <TableCell>{header}</TableCell>
         })
     }
 
     function renderRows(data, keys){
-        console.log('rendering data:',data)
         if(!data.length > 0) 
             return(
                 <TableRow>
